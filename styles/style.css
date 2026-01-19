@@ -1,25 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    block-size:border-box;
+}
+.container{
+    padding: 120px 200px;
+}
+body{
+    font-family: "Inter", sans-serif;
+}
+button{
+    padding: 12px 16px;
+    border-radius: 50px;
+    font-weight: 400;
+    font-size: 16px;
+    border: none;
+}
 
 
 
 
+/* navbar */
+header{
+    padding: 16px 200px;
+    background-color:#1A0B2E ;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: .5px solid #412567;
+}
+.logo h1{
+    font-weight:800;
+    font-size: 40px;
+}
+.logo h1 .gradient-logo{
+    background:linear-gradient(to top ,rgb(238, 255, 0), rgb(193, 26, 190), rgb(182, 133, 217)) ;
+    color: transparent;
+    background-clip: text;
+}
+li{
+    list-style: none;
+}
+header ul{
+   display: flex;
+   gap: 32px; 
+}
+header button{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    font-size:16px;
+    background: linear-gradient(30deg, rgb(238, 255, 0), rgb(193, 26, 190), rgb(182, 133, 217));
+}
 
+/* hero */
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0 ;
+}
+/* microphone adding */
+.hero-microphone{
+    
+    width: 370px;
+    height: 370px;
+    background-image: url("../assets/hero-circle.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero h1{
+    margin-top: 70px;
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    font-size:60px;
+}
+.hero p{
+    color: white;
+    font-weight: 200;
+}
+.hero .btn-hero{
 
-
-
-
-
-
-
-
-
-
-
-
-
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin-top: 24px;
+}
+.hero .btn-spotify {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    color: white;
+    font-weight: 500;
+    background: linear-gradient(30deg, rgb(238, 255, 0), rgb(193, 26, 190), rgb(182, 133, 217));
+}
+.hero .btn-subscribe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    background: none;
+    color: #00FF88;
+    border:1px solid #00FF88;
+}
 .hero{
     background-image: url("../assets/hero-bg.png");
-    /* background-position: ;
+    background-position: ;
     background-repeat: no-repeat;
-    background-size: ; */
+    background-size:cover ;
 }

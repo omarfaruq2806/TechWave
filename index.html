@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechWave</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <!-- Navbar -->
-    <header>
-        <div>
+    <header >
+        <div class="logo">
             <h1>Tech<span class="gradient-logo">Wave</span></h1>
         </div>
 
@@ -21,24 +24,24 @@
         </ul>
 
         <div class="subscribe">
-            <button> Subscribe</button>
+            <button> Subscribe <img src="./assets/ArrowRight.png" alt=""></button>
         </div>
-    </header>
+    </header> 
 
     <!-- main section -->
     <main>
         <!-- hero section -->
         <section class="hero">
-            <div>
-                <img src="" alt="">
+            <div class="hero-microphone">
+                <img src="./assets/microphone.png" alt="">
             </div>
             <div>
                 <h1>TechWave</h1>
                 <p>Your daily dose of tech insights, productivity hacks, and personal growth</p>
             </div>
-            <div>
-                <button class="btn-spotify">Listen on Spotify</button>
-                <button class="btn-subscribe">Subscribe</button>
+            <div class="btn-hero">
+                <button class="btn-spotify"><img src="./assets/spotify.png" alt=""> Listen on Spotify</button>
+                <button class="btn-subscribe"><img src="./assets/message.png" alt=""> Subscribe</button>
             </div>
         </section>
 
@@ -76,8 +79,8 @@
 
         <!-- speciality section -->
         <section class="speciality">
-            <h1>Why Choose TechWave</h1>
-
+            <div class="container">
+                <h1>Why Choose TechWave</h1>
             <div>
                 <div class="audio">
                     <img src="./assets/headphone.png" alt="">
@@ -105,6 +108,7 @@
                     <p>Access show notes, transcripts, and additional learning materials for every episode</p>
                 </div>
             </div>
+            </div>
         </section>
 
         <!-- episodes section -->
@@ -113,7 +117,7 @@
                 <h1>Featured Episodes</h1>
 
                 <div>
-                    <iframe src="" frameborder="0"></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Sat3AgVTeoY?si=l6Z6wDjoGE6dbZIC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <div>
                         <h4>The Future of AI in Everyday Life</h4>
                         <p>Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
@@ -121,7 +125,7 @@
                     </div>
                 </div>
                 <div>
-                    <iframe src="" frameborder="0"></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/RO14DsVxZtM?si=FsndPZaf-rx84TeH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <div>
                         <h4>Building Better Habits for Remote Work</h4>
                         <p>Practical strategies for staying productive and maintaining work-life balance in a remote environment.</p>
@@ -129,7 +133,7 @@
                     </div>
                 </div>
                 <div>
-                    <iframe src="" frameborder="0"></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/vsaLoX5rK5I?si=OLS7sqsMnTkC-BPM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <div>
                         <h4>Career Growth in Tech: A Roadmap</h4>
                         <p>Expert advice on navigating your tech career from junior developer to senior leadership roles.</p>
