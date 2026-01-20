@@ -16,6 +16,9 @@ button{
     font-size: 16px;
     border: none;
 }
+p , h1  , h4{
+    color: #ffffff;
+}
 
 
 
@@ -118,4 +121,107 @@ header button{
     background-position: ;
     background-repeat: no-repeat;
     background-size:cover ;
+}
+
+/* about section */
+.about-section{
+    background-color: #1A0B2E;
+}
+.about-section h1{
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.about-section p{
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    padding-bottom: 24px;
+    line-height: 30px;
+
+}
+
+/* ................................................. */
+.speciality {
+    background-color: #230E3D;
+}
+.speciality .speciality-head {
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.speciality p {
+    font-size: 16px;
+    padding-top: 20px;
+    line-height: 24px;
+}
+.speciality div h1{
+    padding-top: 20px;
+}
+.speciality .card-sp {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3 ,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+.speciality .card-sp div{
+    border-radius: 20px;
+    background-color:#351165 ;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+} 
+.speciality .card-sp .audio{
+    grid-row:span 2 ;
+}
+.speciality .card-sp .mobile ,
+.speciality .card-sp .global{
+    grid-column: span 2;
+}
+.speciality .card-sp .interviews{
+     grid-column: span 2;
+}
+
+/* episodes */
+.episode{
+    background-color: #1A0B2E;
+}
+.episode h1{
+    text-align: center;
+    font-size: 48px;
+    padding-bottom: 30px;
+}
+.episode iframe{
+    width: 100%;
+}
+.card-vid{
+    display: flex;
+    gap: 20px;
+}
+.card-vid div {
+    background-color: #250D44;
+    border-radius: 20px;
+}
+.card-vid div iframe{
+    border-radius: 20px 20px 0 0 ;
+}
+.card-vid div div{
+    padding: 16px;
+
+}
+.card-vid div div h4{
+    font-size: 30px;
+}
+.card-vid div div p{
+    line-height: 24px;
+}
+.card-vid div p:last-child{
+    color: #00FF88;
+    padding: 16px  0 0 0 ;
+    display: flex;
+    gap: 16px;
 }
