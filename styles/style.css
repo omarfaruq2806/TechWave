@@ -27,6 +27,9 @@ p , h1  , h4{
 
 
 /* navbar */
+.hamburger-menu{
+    display: none;
+}
 header{
     padding: 16px 200px;
     background-color:#1A0B2E ;
@@ -122,7 +125,7 @@ header button{
 }
 .hero{
     background-image: url("../assets/hero-bg.png");
-    /* background-position: ; */
+    background-position:center ;
     background-repeat: no-repeat;
     background-size:cover ;
 }
@@ -301,4 +304,102 @@ footer h1{
 .footer-link div{
     display: flex;
     gap: 16px;
+}
+
+
+/* responsive */
+@media screen and ( max-width: 576px ){
+    p{
+        font-weight: 100;
+    }
+    h1{
+        font-weight: 700;
+        font-size: 48px;
+    }
+    .container{
+        padding:  24px 16px;
+    }
+    /* header */
+    header ul , header .subscribe{
+        display:none;
+    }
+    .hamburger-menu{
+        display:block;
+    }
+    header{
+        padding: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* hero */
+    .hero-microphone{
+    width: 200px;
+    height: 200px;
+    }
+    .hero-microphone img{
+        width: 70px;
+    }
+    .hero h1{
+    font-weight: 700;
+    font-size:48px;
+    }
+    /* about */
+    .about-text h1{
+        font-size: 40px;
+    }
+    /* rating */
+    .rating h1 {
+        font-size: 40px;
+    }
+    .rating{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* speciality */
+    .speciality .speciality-head{
+        font-size: 40px;
+    }
+    .speciality .card-sp{
+        display: flex;
+        flex-direction: column;
+    }
+    .speciality .card-sp h1 {
+        font-size: 24px;
+    }
+
+    /* episode */
+    .episode h1 {
+        font-size: 40px;
+    }
+    .card-vid{
+        flex-direction: column;
+    }
+    .card-vid div div h4{
+    font-size: 24px;
+    }
+
+    /* meet the host */
+    .head-host{
+        font-size: 40px;
+    }
+    .hostbox{
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* footer */
+    footer h1{
+        font-size: 40px;
+    }
+    .footer-link{
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr;
+    }
+
 }
