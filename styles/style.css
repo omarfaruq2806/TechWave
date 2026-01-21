@@ -19,6 +19,9 @@ button{
 p , h1  , h4{
     color: #ffffff;
 }
+/* img{
+    width: 100%;
+} */
 
 
 
@@ -37,7 +40,8 @@ header{
     font-weight:800;
     font-size: 40px;
 }
-.logo h1 .gradient-logo{
+.logo h1 .gradient-logo ,
+footer h1 .gradient-logo {
     background:linear-gradient(to top ,rgb(238, 255, 0), rgb(193, 26, 190), rgb(182, 133, 217)) ;
     color: transparent;
     background-clip: text;
@@ -118,7 +122,7 @@ header button{
 }
 .hero{
     background-image: url("../assets/hero-bg.png");
-    background-position: ;
+    /* background-position: ; */
     background-repeat: no-repeat;
     background-size:cover ;
 }
@@ -138,12 +142,26 @@ header button{
     font-size: 20px;
     text-align: center;
     color: white;
-    padding-bottom: 24px;
+    padding-bottom: 30px;
     line-height: 30px;
-
+}
+.about-text{
+    padding-bottom: 50px;
+    border-bottom: .5px solid #412567;
 }
 
-/* ................................................. */
+/* rating */
+.rating h1{
+    color: #00FF88;
+    font-size: 60px;
+}
+.rating{
+    padding-top: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* speciality */
 .speciality {
     background-color: #230E3D;
 }
@@ -187,13 +205,13 @@ header button{
 }
 
 /* episodes */
-.episode{
+.episode , .host{
     background-color: #1A0B2E;
 }
 .episode h1{
     text-align: center;
     font-size: 48px;
-    padding-bottom: 30px;
+    padding-bottom: 45px;
 }
 .episode iframe{
     width: 100%;
@@ -209,6 +227,9 @@ header button{
 .card-vid div iframe{
     border-radius: 20px 20px 0 0 ;
 }
+.card-vid div h4{
+    padding-bottom: 24px;
+}
 .card-vid div div{
     padding: 16px;
 
@@ -221,7 +242,63 @@ header button{
 }
 .card-vid div p:last-child{
     color: #00FF88;
+}
+.card-vid div .time{
     padding: 16px  0 0 0 ;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* meet the host */
+.head-host{
+    font-size: 54px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.host .hostbox{
+    background-color: #250D44;
+    border-radius: 50px;
+    padding: 60px;
+    display: flex;
+    gap: 30px;
+}
+.hostbox h3{
+    font-size: 32px;
+    padding-bottom: 24px;
+    color: white;
+}
+.hostbox p{
+    line-height: 20px;
+    padding-bottom: 20px;
+}
+.social-host img{
+    width: 30px;
+    border: .5px solid #412567;
+    /* padding: 0; */
+    margin-right: 16px;
+    border-radius: 50%;
+}
+
+/*  footer*/
+footer{
+    background-image: url("../assets/footer-bg.png");
+    background-size:cover ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer h1{
+    font-size: 60px;
+    padding-bottom: 24px;
+}
+.footer-link{
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+.footer-link div{
     display: flex;
     gap: 16px;
 }
