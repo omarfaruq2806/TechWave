@@ -74,7 +74,7 @@ header button{
     padding: 100px 0 ;
 }
 /* new twxt */
-.hero .new-text{
+/* .hero .new-text{
     position: absolute;
     top: 200px;
     right: 700px;
@@ -85,7 +85,7 @@ header button{
     border-radius: 30px;
     color: black;
     background-color: #00FF88;
-}
+} */
 /* microphone adding */
 .hero-microphone{
     
