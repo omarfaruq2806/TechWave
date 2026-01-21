@@ -73,6 +73,19 @@ header button{
     align-items: center;
     padding: 100px 0 ;
 }
+/* new twxt */
+.hero .new-text{
+    position: absolute;
+    top: 200px;
+    right: 700px;
+}
+.hero .new-text p{
+    font-weight: 500;
+    padding: 12px 24px;
+    border-radius: 30px;
+    color: black;
+    background-color: #00FF88;
+}
 /* microphone adding */
 .hero-microphone{
     
@@ -351,6 +364,10 @@ button:hover {
     .hero h1{
     font-weight: 700;
     font-size:48px;
+    }
+    /* new twxt */
+    .hero .new-text{ 
+        display: none;
     }
     /* about */
     .about-text h1{
